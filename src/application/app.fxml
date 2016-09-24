@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#handShakeRequest" prefHeight="920.0" prefWidth="1475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.appController">
+	<children>
+      <ImageView fitHeight="716.0" fitWidth="511.0" layoutX="-65.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@android.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="716.0" fitWidth="511.0" layoutX="1012.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@android.png" />
+         </image>
+      </ImageView>
+		<ImageView fitHeight="126.0" fitWidth="493.0" layoutX="601.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@coud.png" />
+			</image>
+		</ImageView>
+		<RadioButton fx:id="radioCloud" layoutX="664.0" layoutY="113.0" mnemonicParsing="false" onAction="#handShakeRequest" />
+      <Label layoutX="1167.0" layoutY="190.0" text="Node Id:">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Button fx:id="sendMsg2" layoutX="1125.0" layoutY="681.0" mnemonicParsing="false" onAction="#sendMsg2" prefHeight="27.0" prefWidth="273.0" text="Send Msg" />
+      <TextField fx:id="msg2" layoutX="1153.0" layoutY="648.0" prefHeight="27.0" prefWidth="245.0" />
+      <Label layoutX="1112.0" layoutY="653.0" text="Msg:" />
+      <Label layoutX="1113.0" layoutY="621.0" text="To:" />
+      <Label layoutX="1118.0" layoutY="592.0" text="Send message" />
+      <TextField fx:id="to2" layoutX="1152.0" layoutY="616.0" prefHeight="27.0" prefWidth="61.0" />
+      <Label fx:id="nodeId2" layoutX="1260.0" layoutY="190.0" text="Node">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label layoutX="1119.0" layoutY="409.0" text="InBox" />
+      <Label layoutX="1118.0" layoutY="232.0" text="OutBox" />
+      <Separator layoutX="357.0" orientation="VERTICAL" prefHeight="920.0" prefWidth="20.0" />
+      <Separator layoutX="1064.0" orientation="VERTICAL" prefHeight="920.0" prefWidth="20.0" />
+      <ImageView fitHeight="618.0" fitWidth="797.0" layoutX="375.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="hsButtom" layoutX="659.0" layoutY="467.0" mnemonicParsing="false" onAction="#startHandShake" text="HandShake" />
+      <ListView fx:id="inBox2" layoutX="1120.0" layoutY="437.0" prefHeight="147.0" prefWidth="279.0" />
+      <ListView fx:id="outBox2" layoutX="1120.0" layoutY="256.0" prefHeight="147.0" prefWidth="279.0" />
+      <RadioButton fx:id="radioA" layoutX="687.0" layoutY="249.0" mnemonicParsing="false" onAction="#handShakeRequest" text="A" />
+      <RadioButton fx:id="radioB" layoutX="881.0" layoutY="319.0" mnemonicParsing="false" onAction="#handShakeRequest" text="B" />
+      <RadioButton fx:id="radioC" layoutX="958.0" layoutY="501.0" mnemonicParsing="false" onAction="#handShakeRequest" text="C" />
+      <RadioButton fx:id="radioD" layoutX="878.0" layoutY="680.0" mnemonicParsing="false" onAction="#handShakeRequest" text="D" />
+      <RadioButton fx:id="radioE" layoutX="684.0" layoutY="758.0" mnemonicParsing="false" onAction="#handShakeRequest" prefHeight="17.0" prefWidth="0.0" text="E" />
+      <RadioButton fx:id="RadioF" layoutX="491.0" layoutY="680.0" mnemonicParsing="false" onAction="#handShakeRequest" prefHeight="17.0" prefWidth="0.0" text="F" />
+      <RadioButton fx:id="radioG" layoutX="412.0" layoutY="501.0" mnemonicParsing="false" onAction="#handShakeRequest" prefHeight="17.0" prefWidth="0.0" text="G" />
+      <RadioButton fx:id="radioH" layoutX="491.0" layoutY="319.0" mnemonicParsing="false" onAction="#handShakeRequest" prefHeight="17.0" prefWidth="0.0" text="H" />
+      <ListView fx:id="outBox1" layoutX="43.0" layoutY="256.0" prefHeight="147.0" prefWidth="279.0" />
+      <ListView fx:id="inBox1" layoutX="43.0" layoutY="437.0" prefHeight="147.0" prefWidth="279.0" />
+      <Label layoutX="41.0" layoutY="232.0" text="OutBox" />
+      <Label layoutX="42.0" layoutY="409.0" text="InBox" />
+      <Label fx:id="nodeId1" layoutX="183.0" layoutY="190.0" text="Node">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="to1" layoutX="75.0" layoutY="616.0" prefHeight="27.0" prefWidth="61.0" />
+      <Label layoutX="41.0" layoutY="592.0" text="Send message" />
+      <Label layoutX="36.0" layoutY="621.0" text="To:" />
+      <Label layoutX="35.0" layoutY="653.0" text="Msg:" />
+      <TextField fx:id="msg1" layoutX="76.0" layoutY="648.0" prefHeight="27.0" prefWidth="245.0" />
+      <Button fx:id="sendMsg1" layoutX="48.0" layoutY="681.0" mnemonicParsing="false" onAction="#sendMsg2" prefHeight="27.0" prefWidth="273.0" text="Send Msg" />
+      <Label layoutX="90.0" layoutY="190.0" text="Node Id:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="6.0" text="RELAY" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="46.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5168539325842697" centerY="0.5" radius="0.6428571428571428">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="738.0" layoutY="113.0" text="Relay Cloud" />
+	</children>
+</Pane>
